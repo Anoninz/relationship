@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 0;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1.42857143;
+}
+
+.result-main {
+    height: 40vh;
+    background: #333333;
+}
+
+.buttons {
+    height: 60vh;
+    background: #3d3d3d;
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    width: 25%;
+    height: 25%;
+    vertical-align: middle;
+    text-align: center;
+    background: #333333;
+    color: #e9e9e9;
+    font-size: 2rem;
+    border-radius: 0.6rem;
+    border: 0.2rem #363636 solid;
+    transition: 1s background;
+    padding: 0;
+}
+
+.button {
+    pointer-events: none;
+}
+
+#id-button-equal {
+    background: #e7763e;
+}
+
+.click {
+    background: #2e2e2e;
+}
+
+.clickEqual {
+    background: #e66747 !important;
+}
+
+.result-header {
+    height: 10%
+}
+
+.input-back {
+    height: 30%;
+    text-align: right;
+    padding: 0 1rem;
+    overflow: scroll;
+}
+
+.result-input {
+    height: 45%;
+    padding: 0 1rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.input-now {
+    font-size: 3rem;
+    color: #e9e9e9;
+    text-align: right;
+}
+
+.hidden {
+    display: none
+}
+
+/* 闪动效果 */
+.shineAnimation {
+    font-size: 3.5rem;
+    animation: 1s shine infinite steps(1);
+}
+
+@keyframes shine {
+    0% {
+        color: #333333;
+    }
+    50% {
+        color: #e9e9e9;
+    }
+}
+
+/* 垂直居中 */
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* warning 动画 */
+.warning {
+    color: #f54444;
+    -webkit-animation: 0.1s warn 4 alternate;
+    animation: 0.1s warn 4 alternate;
+    text-align: center;
+}
+
+@keyframes warn {
+    0% {
+        transform: translate(-5%, -50%);
+    }
+    50% {
+        transform: translate(5%, -50%);
+    }
+}
+
+@-webkit-keyframes warn {
+    0% {
+        -webkit-transform: translateX(-5%);
+    }
+    50% {
+        -webkit-transform: translateX(5%);
+    }
+}
+
+#id-input-back {
+    font-size: 1.6rem;
+    color: #a4a4a4;
+}
+
+.sex-option {
+    height: 15%;
+    background: #2b2b2b;
+    color: #e9e9e9;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.sex-option * {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.sex-contain {
+    /*position: relative;
+    top:0.2rem;*/
+}
+
+switch {
+    display: inline-block;
+    font-size: 0;
+    width: 6rem;
+    overflow-x: hidden;
+    vertical-align: bottom;
+    border-radius: 0.5rem;
+}
+
+xuanxian {
+    width: 9rem;
+    transition: 0.5s;
+}
+
+xuanxian > * {
+    width: 3rem;
+    font-size: 2rem;
+    padding: 0 0.3rem;
+}
+
+.switch-boy {
+    background: linear-gradient(to bottom, #6a9bff, #0088cc);
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.switch-space {
+    background: white;
+}
+
+.switch-girl {
+    background: linear-gradient(to bottom, #f58181, #ff4949);
+    text-align: right;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.girl {
+    transform: translateX(-33%);
+}
